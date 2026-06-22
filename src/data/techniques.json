@@ -1,0 +1,743 @@
+[
+  {
+    "id": "seoi-nage",
+    "nom_japonais": "Seoi-nage",
+    "romaji": "Seoi-nage",
+    "traduction_fr": "Projection par les épaules",
+    "kanji": "背負投",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": 2,
+    "images": ["seoi-nage.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-haut avec la main de revers, lever le bras de manche vers le haut.",
+      "tsukuri": "Double pivot (deux pas) ou rotation directe, passer sous le bras d'Uke, coude droit dans l'aisselle d'Uke, dos courbé, genoux fléchis, jambes entre celles d'Uke.",
+      "kake": "Redresser les jambes, se pencher en avant, projeter Uke par-dessus l'épaule droite en tirant le bras droit vers le bas.",
+      "erreurs": "Se redresser trop vite sans avoir Uke sur le dos. Rester trop debout pendant le tsukuri — les genoux doivent fléchir profondément."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo", "favori_competition"]
+  },
+  {
+    "id": "kuchiki-taoshi",
+    "nom_japonais": "Kuchiki-taoshi",
+    "romaji": "Kuchiki-taoshi",
+    "traduction_fr": "Renversement de bois mort",
+    "kanji": "朽木倒",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": null,
+    "images": ["kuchiki-taoshi.gif"],
+    "tips": {
+      "kuzushi": "Pousser Uke vers l'arrière ou attendre une poussée adverse pour créer le déséquilibre vers l'avant.",
+      "tsukuri": "S'accroupir rapidement et saisir la jambe d'Uke derrière le genou (ou la cheville) des deux mains ou d'une main.",
+      "kake": "Soulever la jambe saisie vers le haut tout en poussant l'épaule d'Uke vers l'arrière avec l'épaule ou le torse.",
+      "erreurs": "Saisir trop haut (cuisse au lieu du genou/cheville). S'exposer à la contre-prise si l'entrée est trop lente."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["uv2"]
+  },
+  {
+    "id": "uki-otoshi",
+    "nom_japonais": "Uki-otoshi",
+    "romaji": "Uki-otoshi",
+    "traduction_fr": "Chute flottante",
+    "kanji": "浮落",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": 1,
+    "images": ["uki-otoshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant en reculant soi-même, l'entraîner dans le mouvement.",
+      "tsukuri": "S'agenouiller sur le genou gauche tout en continuant à tirer avec les deux mains vers le bas-avant.",
+      "kake": "Tirer Uke vers le bas avec les deux bras, il chute par-dessus le genou posé au sol. Technique de bras pure.",
+      "erreurs": "Lâcher la prise pendant la descente au sol. Ne pas assez tirer vers l'avant — Uke doit être emporté dans la chute."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "sumi-otoshi",
+    "nom_japonais": "Sumi-otoshi",
+    "romaji": "Sumi-otoshi",
+    "traduction_fr": "Chute dans le coin",
+    "kanji": "隅落",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": 3,
+    "images": ["sumi-otoshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'arrière-diagonale droite, en poussant simultanément avec la main de manche.",
+      "tsukuri": "Reculer en tirant, maintenir le contact, orienter Uke vers l'arrière-coin droit.",
+      "kake": "Abaisser brutalement les deux mains vers l'arrière-bas, Uke chute dans le coin sans utiliser la hanche ni la jambe.",
+      "erreurs": "Utiliser la hanche (ce serait une autre technique). Perdre le déséquilibre en cours d'exécution."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "okuri-ashi-barai",
+    "nom_japonais": "Okuri-ashi-barai",
+    "romaji": "Okuri-ashi-barai",
+    "traduction_fr": "Balayage des deux pieds",
+    "kanji": "送足払",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 2,
+    "images": ["okuri-ashi-barai.gif"],
+    "tips": {
+      "kuzushi": "Déplacer Uke latéralement par des poussées-tractions rythmées, attendre qu'il déplace ses deux pieds ensemble.",
+      "tsukuri": "Se placer de côté, pied de balayage prêt, au moment où Uke rassemble ses pieds.",
+      "kake": "Balayer les deux chevilles simultanément de l'extérieur vers l'intérieur au moment du rassemblement des pieds, en tournant le corps.",
+      "erreurs": "Balayer quand les pieds sont écartés (les balayer séparément ne fonctionne pas). Manquer le timing du rassemblement."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "timing_critique"]
+  },
+  {
+    "id": "tai-otoshi",
+    "nom_japonais": "Tai-otoshi",
+    "romaji": "Tai-otoshi",
+    "traduction_fr": "Chute du corps",
+    "kanji": "体落",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": 3,
+    "images": ["tai-otoshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-droite en levant la main de revers, provoquer un pas.",
+      "tsukuri": "Avancer le pied droit loin devant le pied droit d'Uke, puis étendre la jambe droite en travers de la jambe droite d'Uke.",
+      "kake": "Tirer Uke vers le bas en pivotant, la jambe droite fait obstacle — Uke chute par-dessus la jambe tendue.",
+      "erreurs": "Utiliser la hanche (ce serait O-goshi). La jambe doit bloquer la jambe d'Uke sans que la hanche ne soit utilisée comme pivot."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "technique_de_bras"]
+  },
+  {
+    "id": "uchi-mata",
+    "nom_japonais": "Uchi-mata",
+    "romaji": "Uchi-mata",
+    "traduction_fr": "Fauchage de la cuisse intérieure",
+    "kanji": "内股",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 4,
+    "images": ["uchi-mata.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale à 45° avant l'entrée, en haussant les coudes.",
+      "tsukuri": "Pivoter sur le pied d'appui, talon vers l'intérieur ; la jambe balancée arrive entre les jambes d'Uke.",
+      "kake": "Fouet de la jambe vers le haut en tirant simultanément avec les deux mains ; corps incliné en avant.",
+      "erreurs": "Rentrer trop loin et perdre l'angle — rester à hauteur de l'aine d'Uke, pas derrière."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "favori_competition", "combinaison_possible"]
+  },
+  {
+    "id": "kosoto-gake",
+    "nom_japonais": "Ko-soto-gake",
+    "romaji": "Ko-soto-gake",
+    "traduction_fr": "Petit crochet extérieur",
+    "kanji": "小外掛",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": null,
+    "images": ["kosoto-gake.gif"],
+    "tips": {
+      "kuzushi": "Pousser Uke vers l'arrière sur son talon, en levant la main de revers et en poussant avec le corps.",
+      "tsukuri": "Avancer le pied droit à côté du pied droit d'Uke, genou légèrement fléchi, corps contre corps.",
+      "kake": "Accrocher l'arrière du genou ou du mollet d'Uke avec la jambe droite (crochet), continuer à pousser Uke vers l'arrière.",
+      "erreurs": "Faucher au lieu de crocheter — le pied doit rester collé à la jambe d'Uke. Ne pas pousser avec le corps en même temps."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["uv2", "combinaison_possible"]
+  },
+  {
+    "id": "harai-goshi",
+    "nom_japonais": "Harai-goshi",
+    "romaji": "Harai-goshi",
+    "traduction_fr": "Hanche balayée",
+    "kanji": "払腰",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 2,
+    "images": ["harai-goshi.gif", "harai-goshi-sode.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale droite, lever les coudes, mettre Uke sur la pointe des pieds.",
+      "tsukuri": "Pivot profond sur le pied gauche, bras droit autour de la taille d'Uke, corps bien en rotation, poids sur le pied d'appui, jambe droite prête à balayer.",
+      "kake": "Balayer la jambe droite vers l'arrière-haut en fouettant, hanche comme pivot, simultanément tirer avec les deux bras vers le bas.",
+      "erreurs": "Balayer avec le genou plié. Ne pas garder la jambe de balayage tendue réduit la puissance de projection."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "favori_competition"]
+  },
+  {
+    "id": "tsurikomi-goshi",
+    "nom_japonais": "Tsurikomi-goshi",
+    "romaji": "Tsurikomi-goshi",
+    "traduction_fr": "Hanche tirée-soulevée",
+    "kanji": "釣込腰",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 3,
+    "images": ["tsurikomi-goshi.gif", "tsurikomi-goshi-dedos.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-haut avec les deux mains (soulever avec la main de revers, tirer avec la main de manche), le mettre sur la pointe des pieds.",
+      "tsukuri": "Rotation sur le pied gauche, passer le bras droit autour de la taille, hanches devant Uke, genoux fléchis. Différence avec O-goshi : la main de revers tire le revers vers le haut (tsuri).",
+      "kake": "Redresser les jambes, projeter Uke par-dessus la hanche en tirant simultanément vers le haut avec le revers et vers le bas avec la manche.",
+      "erreurs": "Oublier l'action de levée (tsuri) du revers — sans ça, c'est un O-goshi. Hanches trop basses ou trop éloignées d'Uke."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "hiza-guruma",
+    "nom_japonais": "Hiza-guruma",
+    "romaji": "Hiza-guruma",
+    "traduction_fr": "Roue sur le genou",
+    "kanji": "膝車",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 1,
+    "images": ["hiza-guruma.gif", "hiza-guruma-dedos.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale, en levant la main de revers vers le haut et l'extérieur.",
+      "tsukuri": "Pivoter sur le pied gauche en plaçant la semelle du pied droit à plat contre le genou gauche d'Uke (sur le côté, pas dessous).",
+      "kake": "Bloquer le genou comme un pivot et tourner Uke autour de ce point en continuant à tirer et soulever avec les bras.",
+      "erreurs": "Placer le pied sous le genou au lieu de sur le côté du genou. Ne pas faire tourner Uke — le blocage seul ne suffit pas."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "yoko-wakare",
+    "nom_japonais": "Yoko-wakare",
+    "romaji": "Yoko-wakare",
+    "traduction_fr": "Séparation latérale",
+    "kanji": "横分",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 3,
+    "images": ["yoko-wakare.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-latéral droit pour le déséquilibrer sur le côté.",
+      "tsukuri": "Tomber sur le côté gauche en plaçant le pied gauche contre la hanche ou la jambe gauche d'Uke.",
+      "kake": "En tombant, tirer Uke par-dessus soi avec les deux bras, la jambe gauche sert de point d'appui pour catapulter.",
+      "erreurs": "Tomber trop en arrière (perdre le contact avec Uke). La direction doit être latérale, pas vers l'arrière."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "kata-guruma",
+    "nom_japonais": "Kata-guruma",
+    "romaji": "Kata-guruma",
+    "traduction_fr": "Roue sur l'épaule",
+    "kanji": "肩車",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": 3,
+    "images": ["kata-guruma.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant tout en s'accroupissant rapidement, déséquilibre vers l'avant-bas.",
+      "tsukuri": "S'accroupir profondément, passer sous le centre de gravité d'Uke, placer une épaule dans son bas-ventre, saisir sa jambe avec une main, l'autre bras autour de sa taille.",
+      "kake": "Se relever en soulevant Uke sur les épaules, puis le faire basculer vers l'avant en inclinant le corps.",
+      "erreurs": "Ne pas descendre assez bas — il faut passer sous le centre de gravité d'Uke. Soulever avec le dos au lieu des jambes."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "soto-makikomi",
+    "nom_japonais": "Soto-makikomi",
+    "romaji": "Soto-makikomi",
+    "traduction_fr": "Enroulement extérieur",
+    "kanji": "外巻込",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 4,
+    "images": ["soto-makikomi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale droite, le préparer à un harai-goshi.",
+      "tsukuri": "Entrée similaire à Harai-goshi mais au lieu de balayer, enrouler le bras de manche d'Uke avec le bras droit et tomber avec lui.",
+      "kake": "Tomber sur le côté droit en entraînant Uke dans la rotation, le bras enroulé guide sa chute par-dessus.",
+      "erreurs": "Lâcher l'enroulement pendant la chute. Ne pas tomber assez loin sur le côté — rester trop debout."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "o-soto-gari",
+    "nom_japonais": "O-soto-gari",
+    "romaji": "O-soto-gari",
+    "traduction_fr": "Grand fauchage extérieur",
+    "kanji": "大外刈",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 1,
+    "images": ["o-soto-gari.gif", "o-soto-gari-eri.gif"],
+    "tips": {
+      "kuzushi": "Pousser Uke vers l'arrière-diagonale droite en levant les coudes et en avançant le corps.",
+      "tsukuri": "Avancer le pied droit à côté du pied droit d'Uke, épaule contre épaule, corps légèrement penché en avant.",
+      "kake": "Faucher la jambe droite d'Uke de l'avant vers l'arrière avec la jambe droite, en tirant avec les bras vers le bas.",
+      "erreurs": "Ne pas oublier de pousser avec le corps — la jambe seule ne suffit pas. Rester trop loin d'Uke empêche le fauchage efficace."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["gokyo", "favori_competition"]
+  },
+  {
+    "id": "sasae-tsurikomi-ashi",
+    "nom_japonais": "Sasae-tsurikomi-ashi",
+    "romaji": "Sasae-tsurikomi-ashi",
+    "traduction_fr": "Blocage du pied tiré-soulevé",
+    "kanji": "支釣込足",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 1,
+    "images": ["sasae-tsurikomi-ashi.gif", "sasae-tsurikomi-ashi-dedos.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant en levant les deux mains, le mettre sur la pointe des pieds.",
+      "tsukuri": "Reculer d'un pas, placer la semelle du pied droit contre la cheville ou le bas du tibia gauche d'Uke.",
+      "kake": "Bloquer le pied et continuer à tirer-soulever avec les bras en pivotant, Uke bascule par-dessus le blocage.",
+      "erreurs": "Bloquer trop haut (tibia plutôt que cheville). Le blocage doit être au moment où le pied d'Uke avance, pas après."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "uki-goshi",
+    "nom_japonais": "Uki-goshi",
+    "romaji": "Uki-goshi",
+    "traduction_fr": "Hanche flottante",
+    "kanji": "浮腰",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 1,
+    "images": ["uki-goshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant en levant les deux mains, provoquer un pas en avant.",
+      "tsukuri": "Pivoter sur le pied gauche, passer le bras droit dans le dos d'Uke (saisir la hanche ou la ceinture), hanche droite contre hanche gauche d'Uke, corps en extension.",
+      "kake": "Soulever Uke sur la hanche en arquant le dos et en tirant vers le bas avec les bras, tourner vers l'avant-gauche.",
+      "erreurs": "Ne pas pousser la hanche assez loin — elle doit passer devant Uke. Se pencher en avant au lieu de se redresser."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo", "premier_kata"]
+  },
+  {
+    "id": "harai-tsurikomi-ashi",
+    "nom_japonais": "Harai-tsurikomi-ashi",
+    "romaji": "Harai-tsurikomi-ashi",
+    "traduction_fr": "Balayage du pied tiré-soulevé",
+    "kanji": "払釣込足",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 4,
+    "images": ["harai-tsurikomi-ashi.gif", "harai-tsurikomi-ashi-dedos.gif"],
+    "tips": {
+      "kuzushi": "Tirer-soulever Uke vers l'avant avec les deux mains (action de tsuri sur le revers), le forcer à avancer.",
+      "tsukuri": "Reculer en entraînant Uke, le pied de balayage se prépare à intercepter le pied avancé d'Uke.",
+      "kake": "Balayer la cheville ou le bas du pied d'Uke vers le haut et l'extérieur au moment où il avance, en continuant à tirer avec les bras.",
+      "erreurs": "Arrêter le tirage des bras pendant le balayage. Le balayage et l'action des bras doivent être simultanés."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "hane-goshi",
+    "nom_japonais": "Hane-goshi",
+    "romaji": "Hane-goshi",
+    "traduction_fr": "Hanche rebondissante",
+    "kanji": "跳腰",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 3,
+    "images": ["hane-goshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale, le mettre sur la pointe des pieds, lever les coudes.",
+      "tsukuri": "Pivot sur le pied gauche comme pour Harai-goshi, mais la jambe droite fléchit pour placer le genou/tibia droit contre le genou ou la cuisse gauche d'Uke.",
+      "kake": "Rebondir vers le haut avec la jambe droite (extension rapide du genou) tout en tirant les bras vers le bas — l'effet ressort propulse Uke.",
+      "erreurs": "Confondre avec Harai-goshi — ici la jambe rebondit (fléchit puis s'étend) plutôt que de balayer. La jambe doit être en contact avec Uke."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "koshi-guruma",
+    "nom_japonais": "Koshi-guruma",
+    "romaji": "Koshi-guruma",
+    "traduction_fr": "Roue sur la hanche",
+    "kanji": "腰車",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 3,
+    "images": ["koshi-guruma.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant, lever les deux mains pour le mettre sur la pointe des pieds.",
+      "tsukuri": "Pivot sur le pied gauche, passer le bras droit autour du cou d'Uke (pas de l'épaule — autour du cou), hanches devant Uke.",
+      "kake": "Redresser les jambes, projeter Uke par-dessus la hanche en tournant. Différence avec O-goshi : le bras droit passe autour du cou et non de la taille.",
+      "erreurs": "Saisir l'épaule au lieu du cou (ce serait O-goshi). Hanches insuffisamment avancées — doivent être bien devant Uke."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "yoko-guruma",
+    "nom_japonais": "Yoko-guruma",
+    "romaji": "Yoko-guruma",
+    "traduction_fr": "Roue latérale",
+    "kanji": "横車",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 5,
+    "images": ["yoko-guruma.gif"],
+    "tips": {
+      "kuzushi": "Attendre ou provoquer une poussée latérale d'Uke pour utiliser sa force.",
+      "tsukuri": "Plonger latéralement sous Uke tout en saisissant son bras ou sa taille, se placer perpendiculairement à lui.",
+      "kake": "Tomber sur le côté en entraînant Uke dans une rotation latérale, guider sa chute avec les bras.",
+      "erreurs": "Trop attendre — la technique requiert un timing précis sur la poussée adverse. Ne pas créer assez de rotation."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "uki-waza",
+    "nom_japonais": "Uki-waza",
+    "romaji": "Uki-waza",
+    "traduction_fr": "Technique flottante",
+    "kanji": "浮技",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 5,
+    "images": ["uki-waza.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale gauche, le déséquilibrer sur son coin avant gauche.",
+      "tsukuri": "Tomber sur le côté gauche en étendant la jambe gauche devant la jambe gauche d'Uke pour la bloquer.",
+      "kake": "La jambe gauche étendue bloque la progression d'Uke, les bras continuent à tirer vers l'avant-bas. Uke bascule par-dessus.",
+      "erreurs": "Tomber trop en arrière (la jambe ne bloque plus). Le blocage doit être au sol, jambe tendue, semelle vers Uke."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "kibisu-gaeshi",
+    "nom_japonais": "Kibisu-gaeshi",
+    "romaji": "Kibisu-gaeshi",
+    "traduction_fr": "Retournement par le talon",
+    "kanji": "踵返",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": null,
+    "images": ["kibisu-gaeshi.gif"],
+    "tips": {
+      "kuzushi": "Attirer Uke vers l'avant ou profiter d'une poussée — s'accroupir rapidement.",
+      "tsukuri": "S'accroupir et saisir le(s) talon(s) d'Uke des deux mains par l'arrière.",
+      "kake": "Soulever les talons vers le haut et l'avant tout en poussant les jambes d'Uke avec l'épaule ou la tête, Uke chute en arrière.",
+      "erreurs": "Saisir au-dessus du talon (cheville ou tibia). Pousser sans soulever — les deux actions doivent être simultanées."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["uv2"]
+  },
+  {
+    "id": "morote-gari",
+    "nom_japonais": "Morote-gari",
+    "romaji": "Morote-gari",
+    "traduction_fr": "Fauchage à deux mains",
+    "kanji": "双手刈",
+    "famille": "nage-waza",
+    "sous_famille": "te-waza",
+    "gokyo_groupe": null,
+    "images": ["morote-gari.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant, puis plonger rapidement vers ses jambes.",
+      "tsukuri": "S'accroupir et saisir les deux jambes d'Uke derrière les genoux des deux mains, l'épaule contre son ventre.",
+      "kake": "Soulever les deux genoux vers le haut en poussant avec l'épaule vers l'arrière, Uke chute en arrière.",
+      "erreurs": "Plonger la tête baissée (risque de blessure). Ne pas soulever assez — juste pousser ne suffit pas."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["uv2", "favori_competition"]
+  },
+  {
+    "id": "o-soto-guruma",
+    "nom_japonais": "O-soto-guruma",
+    "romaji": "O-soto-guruma",
+    "traduction_fr": "Grande roue extérieure",
+    "kanji": "大外車",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 5,
+    "images": ["o-soto-guruma.gif"],
+    "tips": {
+      "kuzushi": "Pousser Uke vers l'arrière comme pour O-soto-gari mais avec un angle plus large.",
+      "tsukuri": "Avancer le pied droit, mais au lieu de faucher une seule jambe, la jambe droite va faucher les deux jambes d'Uke simultanément.",
+      "kake": "Faucher les deux jambes d'Uke de l'avant vers l'arrière avec la jambe droite en tenant fort avec les bras.",
+      "erreurs": "Ne faucher qu'une jambe (ce serait O-soto-gari). Le fauchage doit toucher les deux jambes pour l'effet de roue."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "tani-otoshi",
+    "nom_japonais": "Tani-otoshi",
+    "romaji": "Tani-otoshi",
+    "traduction_fr": "Chute dans le ravin",
+    "kanji": "谷落",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 4,
+    "images": ["tani-otoshi.gif", "tani-otoshi-dos.gif"],
+    "tips": {
+      "kuzushi": "Attendre ou provoquer une poussée d'Uke vers l'avant. Utiliser sa force.",
+      "tsukuri": "Passer derrière ou sur le côté d'Uke, placer la jambe droite derrière ses deux jambes (obstacle au sol).",
+      "kake": "Tomber vers l'arrière-latéral en tirant Uke avec les bras vers l'arrière, ses jambes butent sur la jambe posée au sol.",
+      "erreurs": "Placer la jambe d'obstacle trop tôt ou trop loin. Lâcher la prise pendant la chute — garder Uke collé au corps."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "kani-basami",
+    "nom_japonais": "Kani-basami",
+    "romaji": "Kani-basami",
+    "traduction_fr": "Ciseaux du crabe",
+    "kanji": "蟹挟",
+    "famille": "nage-waza",
+    "sous_famille": "yoko-sutemi-waza",
+    "gokyo_groupe": 5,
+    "images": ["kani-basami.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke latéralement, le déséquilibrer sur le côté.",
+      "tsukuri": "Sauter latéralement, placer une jambe devant et une derrière les jambes d'Uke en ciseau.",
+      "kake": "Refermer les jambes en ciseau (comme des pinces de crabe) en tombant, Uke est pris entre les deux jambes et projeté.",
+      "erreurs": "Technique dangereuse — interdite en compétition IJF car elle cible le genou. En kata uniquement, le ciseau doit être au niveau de la hanche."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "sutemi-waza", "kata_uniquement"]
+  },
+  {
+    "id": "ashi-guruma",
+    "nom_japonais": "Ashi-guruma",
+    "romaji": "Ashi-guruma",
+    "traduction_fr": "Roue sur la jambe",
+    "kanji": "足車",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 3,
+    "images": ["ashi-guruma.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale comme pour Hiza-guruma mais légèrement différent.",
+      "tsukuri": "Pivoter sur le pied gauche, placer la jambe droite tendue contre la jambe droite ou le genou d'Uke (plus haut que Hiza-guruma).",
+      "kake": "La jambe tendue sert d'axe de rotation, les bras tirent Uke par-dessus en tournant. Effet de roue autour de la jambe.",
+      "erreurs": "Confondre avec Hiza-guruma — ici c'est la jambe entière (pas juste le genou) qui fait la roue, et le placement est différent."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "sumi-gaeshi",
+    "nom_japonais": "Sumi-gaeshi",
+    "romaji": "Sumi-gaeshi",
+    "traduction_fr": "Renversement dans le coin",
+    "kanji": "隅返",
+    "famille": "nage-waza",
+    "sous_famille": "ma-sutemi-waza",
+    "gokyo_groupe": 3,
+    "images": ["sumi-gaeshi.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonale pour le déséquilibrer vers son coin avant.",
+      "tsukuri": "Tomber en arrière-diagonal, placer le pied dans l'intérieur de la cuisse d'Uke (pas au ventre comme Tomoe-nage).",
+      "kake": "Propulser Uke vers l'avant-diagonal avec la jambe tout en tirant avec les bras, Uke passe en diagonale.",
+      "erreurs": "Confondre avec Tomoe-nage — le pied va dans la cuisse intérieure et la projection est diagonale, pas droite devant."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "ura-nage",
+    "nom_japonais": "Ura-nage",
+    "romaji": "Ura-nage",
+    "traduction_fr": "Projection vers l'arrière",
+    "kanji": "裏投",
+    "famille": "nage-waza",
+    "sous_famille": "ma-sutemi-waza",
+    "gokyo_groupe": 5,
+    "images": ["ura-nage.gif"],
+    "tips": {
+      "kuzushi": "Saisir Uke par derrière ou par le côté, le coller contre soi et le soulever.",
+      "tsukuri": "Enlacer Uke par derrière avec les deux bras (autour de la taille), soulever et reculer.",
+      "kake": "Tomber en arrière en projetant Uke par-dessus l'épaule (gauche ou droite), en arquant le dos.",
+      "erreurs": "Projeter sans soulever — il faut d'abord décoller Uke du sol. Tomber à plat sans rotation — la projection doit être en arc."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "tomoe-nage",
+    "nom_japonais": "Tomoe-nage",
+    "romaji": "Tomoe-nage",
+    "traduction_fr": "Projection en cercle",
+    "kanji": "巴投",
+    "famille": "nage-waza",
+    "sous_famille": "ma-sutemi-waza",
+    "gokyo_groupe": 3,
+    "images": ["tomoe-nage.gif"],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant en faisant reculer un pas soi-même, déstabiliser vers l'avant.",
+      "tsukuri": "Tomber en arrière en plaçant le pied dans le bas-ventre d'Uke, genoux fléchi, dos au sol.",
+      "kake": "Redresser la jambe pour projeter Uke vers l'avant par-dessus soi, guider avec les deux mains pour contrôler la trajectoire.",
+      "erreurs": "Placer le pied trop haut (ventre) ou trop bas (genou). Lâcher Uke pendant la projection — toujours garder le contact des mains."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "sutemi-waza"]
+  },
+  {
+    "id": "kesa-gatame",
+    "nom_japonais": "Kesa-gatame",
+    "romaji": "Kesa-gatame",
+    "traduction_fr": "Immobilisation en écharpe",
+    "kanji": "袈裟固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Maintenir une pression constante vers le bas sur la poitrine d'Uke.",
+      "tsukuri": "Assis à côté d'Uke, bras droit autour de son cou (pas en étranglement), bras gauche saisissant son bras droit sous l'aisselle, tête en avant.",
+      "kake": "Écarter les jambes pour la stabilité, poids du corps sur la poitrine d'Uke, se pencher légèrement vers sa tête.",
+      "erreurs": "S'asseoir trop loin du corps d'Uke. Lever les fesses — garder le poids sur Uke, pas sur ses propres pieds."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["gokyo", "immobilisation_de_base"]
+  },
+  {
+    "id": "kuzure-kesa-gatame",
+    "nom_japonais": "Kuzure-kesa-gatame",
+    "romaji": "Kuzure-kesa-gatame",
+    "traduction_fr": "Immobilisation en écharpe variante",
+    "kanji": "崩袈裟固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Pression continue vers le bas, contrôler le bras et l'épaule d'Uke.",
+      "tsukuri": "Position identique au Kesa-gatame mais le bras de contrôle passe sous l'aisselle d'Uke et saisit le revers ou l'épaule.",
+      "kake": "La hanche et le poids restent contre le flanc d'Uke, jambes écartées pour la stabilité.",
+      "erreurs": "Confondre avec Kesa-gatame — ici c'est l'aisselle qui est saisie, pas le bras."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["variante_kesa"]
+  },
+  {
+    "id": "kata-gatame",
+    "nom_japonais": "Kata-gatame",
+    "romaji": "Kata-gatame",
+    "traduction_fr": "Immobilisation sur l'épaule",
+    "kanji": "肩固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 2,
+    "images": [],
+    "tips": {
+      "kuzushi": "Coller sa joue contre la tempe d'Uke, verrouiller son bras contre sa propre tête.",
+      "tsukuri": "Placer le bras droit d'Uke contre sa propre joue droite, verrouiller avec les deux mains jointes derrière la nuque ou le dos d'Uke.",
+      "kake": "Poids sur la poitrine d'Uke, genoux au sol de chaque côté, écraser légèrement la carotide avec l'épaule.",
+      "erreurs": "Espace entre la tête et le bras d'Uke — le verrou doit être étanche. Poser les genoux trop loin."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo", "pression_carotide"]
+  },
+  {
+    "id": "kami-shiho-gatame",
+    "nom_japonais": "Kami-shiho-gatame",
+    "romaji": "Kami-shiho-gatame",
+    "traduction_fr": "Immobilisation des quatre coins du haut",
+    "kanji": "上四方固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 2,
+    "images": [],
+    "tips": {
+      "kuzushi": "Étirer Uke vers le haut, bras en extension, maintenir la pression sur la poitrine.",
+      "tsukuri": "Positionnement derrière la tête d'Uke, bras passés sous ses aisselles pour saisir sa ceinture, poitrine contre son front/crâne.",
+      "kake": "Étirer les bras d'Uke vers le haut, coller le ventre sur sa tête, genoux au sol de chaque côté de sa tête.",
+      "erreurs": "S'allonger trop horizontalement — rester incliné à ~45°. Saisir les hanches au lieu de la ceinture."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "yoko-shiho-gatame",
+    "nom_japonais": "Yoko-shiho-gatame",
+    "romaji": "Yoko-shiho-gatame",
+    "traduction_fr": "Immobilisation latérale des quatre coins",
+    "kanji": "横四方固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 3,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler à la fois l'épaule et la hanche d'Uke pour l'empêcher de rouler.",
+      "tsukuri": "Sur le côté d'Uke perpendiculairement, bras droit entre ses jambes saisissant la ceinture, bras gauche autour de son cou saisissant l'épaule ou le revers.",
+      "kake": "Corps à 90° d'Uke, poitrine contre son flanc, jambes en extension ou genou fléchi pour la stabilité.",
+      "erreurs": "Ne pas contrôler les jambes — Uke peut faire un pont. S'asseoir trop loin du corps."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "tate-shiho-gatame",
+    "nom_japonais": "Tate-shiho-gatame",
+    "romaji": "Tate-shiho-gatame",
+    "traduction_fr": "Immobilisation verticale des quatre coins",
+    "kanji": "縦四方固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": 4,
+    "images": [],
+    "tips": {
+      "kuzushi": "Maintenir le poids centré sur Uke, contrôler ses deux bras avec les genoux.",
+      "tsukuri": "Monter sur Uke face-à-face (position montée), saisir son revers des deux mains, genoux coincent ses bras contre son corps.",
+      "kake": "Corps dans l'axe d'Uke, hanche vers ses hanches, poitrine contre sa poitrine, genoux verrouillent ses bras.",
+      "erreurs": "S'asseoir trop haut (sur le ventre) ou trop bas (sur les jambes). Laisser des espaces latéraux — Uke peut glisser."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "juji-gatame",
+    "nom_japonais": "Juji-gatame",
+    "romaji": "Juji-gatame",
+    "traduction_fr": "Clef de bras en croix",
+    "kanji": "十字固",
+    "famille": "katame-waza",
+    "sous_famille": "kansetsu-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Étirer le bras d'Uke en tension, pouce vers le haut, bras aligné perpendiculairement au corps.",
+      "tsukuri": "Contrôler le bras d'Uke avec les deux mains, les cuisses serrées de part et d'autre du bras, coude d'Uke sur la hanche, jambes en croix sur sa poitrine.",
+      "kake": "Étirer lentement en levant les hanches, pression sur le coude d'Uke depuis le dessus, jambes serrées.",
+      "erreurs": "Laisser le pouce vers le bas (Uke peut tourner). Exercer la pression en tirant vers soi au lieu de lever les hanches."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "kansetsu-waza"]
+  },
+  {
+    "id": "okuri-eri-jime",
+    "nom_japonais": "Okuri-eri-jime",
+    "romaji": "Okuri-eri-jime",
+    "traduction_fr": "Étranglement glissant des revers",
+    "kanji": "送襟絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler Uke dans le dos, le tirer vers l'arrière pour l'empêcher de se défendre.",
+      "tsukuri": "Par-derrière Uke, saisir le revers droit avec la main droite (pouce à l'intérieur), glisser la main gauche sous le bras gauche d'Uke pour saisir le revers gauche.",
+      "kake": "Croiser les avant-bras en tirant les deux mains vers l'arrière, simultanément pousser la nuque d'Uke vers l'avant avec le sternum.",
+      "erreurs": "Tirer les mains vers le bas au lieu de vers l'arrière. Ne pas utiliser la pression du corps pour compléter l'étranglement."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "shime-waza"]
+  }
+]

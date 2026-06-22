@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="40" fill="#0e0e0f"/>
+  <rect width="256" height="256" rx="40" fill="#c8002a"/>
+  <text x="128" y="180" font-family="serif" font-size="160" text-anchor="middle" fill="white">柔</text>
+</svg>

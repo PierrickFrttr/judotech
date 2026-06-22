@@ -1,0 +1,30 @@
+{
+  "familles": [
+    {
+      "id": "nage-waza",
+      "nom": "Nage-waza",
+      "traduction": "Techniques de projection",
+      "kanji": "投げ技",
+      "couleur": "#c8002a",
+      "sous_familles": [
+        { "id": "te-waza", "nom": "Te-waza", "traduction": "Techniques de main" },
+        { "id": "koshi-waza", "nom": "Koshi-waza", "traduction": "Techniques de hanche" },
+        { "id": "ashi-waza", "nom": "Ashi-waza", "traduction": "Techniques de pied/jambe" },
+        { "id": "ma-sutemi-waza", "nom": "Ma-sutemi-waza", "traduction": "Sacrifice vers l'arrière" },
+        { "id": "yoko-sutemi-waza", "nom": "Yoko-sutemi-waza", "traduction": "Sacrifice latéral" }
+      ]
+    },
+    {
+      "id": "katame-waza",
+      "nom": "Katame-waza",
+      "traduction": "Techniques de contrôle au sol",
+      "kanji": "固め技",
+      "couleur": "#1a6bc8",
+      "sous_familles": [
+        { "id": "osaekomi-waza", "nom": "Osaekomi-waza", "traduction": "Techniques d'immobilisation" },
+        { "id": "shime-waza", "nom": "Shime-waza", "traduction": "Techniques d'étranglement" },
+        { "id": "kansetsu-waza", "nom": "Kansetsu-waza", "traduction": "Clefs articulaires" }
+      ]
+    }
+  ]
+}
