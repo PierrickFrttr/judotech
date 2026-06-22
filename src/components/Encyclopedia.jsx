@@ -8,10 +8,26 @@ const FAMILLE_COLORS = {
   'katame-waza': '#1a6bc8',
 }
 
+const IconGrid = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={16} height={16}>
+    <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+    <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+  </svg>
+)
+
+const IconList = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={16} height={16}>
+    <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+    <circle cx="3" cy="6" r="1" fill="currentColor"/><circle cx="3" cy="12" r="1" fill="currentColor"/>
+    <circle cx="3" cy="18" r="1" fill="currentColor"/>
+  </svg>
+)
+
 export default function Encyclopedia({ techniques, progress, onSelect, onStartQuiz }) {
   const [search, setSearch] = useState('')
   const [familleFilter, setFamilleFilter] = useState('all')
   const [sousFamilleFilter, setSousFamilleFilter] = useState('all')
+  const [viewMode, setViewMode] = useState('list')
 
   const familles = categoriesData.familles
   const selectedFamille = familles.find(f => f.id === familleFilter)
@@ -70,20 +86,38 @@ export default function Encyclopedia({ techniques, progress, onSelect, onStartQu
           </div>
         </div>
 
-        <div className={styles.searchBar}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={16} height={16}>
-            <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-          </svg>
-          <input
-            type="text"
-            placeholder="Rechercher par nom, romaji, traduction, kanji…"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            className={styles.searchInput}
-          />
-          {search && (
-            <button className={styles.clearSearch} onClick={() => setSearch('')}>✕</button>
-          )}
+        <div className={styles.searchRow}>
+          <div className={styles.searchBar}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={16} height={16}>
+              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Rechercher…"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              className={styles.searchInput}
+            />
+            {search && (
+              <button className={styles.clearSearch} onClick={() => setSearch('')}>✕</button>
+            )}
+          </div>
+          <div className={styles.viewToggle}>
+            <button
+              className={`${styles.viewBtn} ${viewMode === 'list' ? styles.viewBtnActive : ''}`}
+              onClick={() => setViewMode('list')}
+              title="Vue liste"
+            >
+              <IconList />
+            </button>
+            <button
+              className={`${styles.viewBtn} ${viewMode === 'grid' ? styles.viewBtnActive : ''}`}
+              onClick={() => setViewMode('grid')}
+              title="Vue grille"
+            >
+              <IconGrid />
+            </button>
+          </div>
         </div>
 
         <div className={styles.filters}>
@@ -115,53 +149,89 @@ export default function Encyclopedia({ techniques, progress, onSelect, onStartQu
         </div>
       </header>
 
-      <div className={styles.grid}>
-        {filtered.map(technique => {
-          const mastery = getMastery(technique.id)
-          const p = progress[technique.id]
-          const attempts = p ? (p.correct || 0) + (p.wrong || 0) : 0
-
-          return (
-            <button
-              key={technique.id}
-              className={styles.card}
-              onClick={() => onSelect(technique.id)}
-            >
-              <div className={styles.cardImage}>
-                <TechniqueImage technique={technique} size="medium" />
-                <div
-                  className={styles.famille}
-                  style={{ background: FAMILLE_COLORS[technique.famille] || 'var(--accent)' }}
-                >
-                  {technique.sous_famille}
-                </div>
-                {mastery === 2 && <div className={styles.masteredBadge}>✓</div>}
-                {mastery === 1 && <div className={styles.seenBadge}>●</div>}
-              </div>
-              <div className={styles.cardContent}>
-                <div className={styles.cardNames}>
-                  <span className={styles.romaji}>{technique.romaji}</span>
-                  <span className={styles.kanji}>{technique.kanji}</span>
-                </div>
-                <span className={styles.traduction}>{technique.traduction_fr}</span>
-                {attempts > 0 && (
-                  <div className={styles.cardProgress}>
-                    <div
-                      className={styles.progressBar}
-                      style={{ width: `${Math.round(((p?.correct || 0) / attempts) * 100)}%` }}
-                    />
+      {viewMode === 'grid' ? (
+        <div className={styles.grid}>
+          {filtered.map(technique => {
+            const mastery = getMastery(technique.id)
+            const p = progress[technique.id]
+            const attempts = p ? (p.correct || 0) + (p.wrong || 0) : 0
+            return (
+              <button key={technique.id} className={styles.card} onClick={() => onSelect(technique.id)}>
+                <div className={styles.cardImage}>
+                  <TechniqueImage technique={technique} size="medium" />
+                  <div className={styles.famille} style={{ background: FAMILLE_COLORS[technique.famille] || 'var(--accent)' }}>
+                    {technique.sous_famille}
                   </div>
-                )}
-              </div>
-            </button>
-          )
-        })}
-        {filtered.length === 0 && (
-          <div className={styles.empty}>
-            <span>Aucune technique trouvée</span>
-          </div>
-        )}
-      </div>
+                  {mastery === 2 && <div className={styles.masteredBadge}>✓</div>}
+                  {mastery === 1 && <div className={styles.seenBadge}>●</div>}
+                </div>
+                <div className={styles.cardContent}>
+                  <div className={styles.cardNames}>
+                    <span className={styles.romaji}>{technique.romaji}</span>
+                    <span className={styles.kanji}>{technique.kanji}</span>
+                  </div>
+                  <span className={styles.traduction}>{technique.traduction_fr}</span>
+                  {attempts > 0 && (
+                    <div className={styles.cardProgress}>
+                      <div className={styles.progressBar} style={{ width: `${Math.round(((p?.correct || 0) / attempts) * 100)}%` }} />
+                    </div>
+                  )}
+                </div>
+              </button>
+            )
+          })}
+          {filtered.length === 0 && <div className={styles.empty}><span>Aucune technique trouvée</span></div>}
+        </div>
+      ) : (
+        <div className={styles.list}>
+          {filtered.map(technique => {
+            const mastery = getMastery(technique.id)
+            const p = progress[technique.id]
+            const attempts = p ? (p.correct || 0) + (p.wrong || 0) : 0
+            const accuracy = attempts > 0 ? Math.round(((p?.correct || 0) / attempts) * 100) : null
+            return (
+              <button key={technique.id} className={styles.listItem} onClick={() => onSelect(technique.id)}>
+                <div className={styles.listImage}>
+                  <TechniqueImage technique={technique} size="small" />
+                </div>
+                <div className={styles.listContent}>
+                  <div className={styles.listTop}>
+                    <span className={styles.listRomaji}>{technique.romaji}</span>
+                    <span className={styles.listKanji}>{technique.kanji}</span>
+                  </div>
+                  <span className={styles.listTraduction}>{technique.traduction_fr}</span>
+                  <div className={styles.listMeta}>
+                    <span
+                      className={styles.listFamille}
+                      style={{ background: `${FAMILLE_COLORS[technique.famille] || 'var(--accent)'}22`, color: FAMILLE_COLORS[technique.famille] || 'var(--accent)' }}
+                    >
+                      {technique.sous_famille}
+                    </span>
+                    {attempts > 0 && (
+                      <div className={styles.listProgress}>
+                        <div className={styles.listProgressBar}>
+                          <div className={styles.listProgressFill} style={{ width: `${accuracy}%` }} />
+                        </div>
+                        <span className={styles.listAccuracy} style={{ color: accuracy >= 80 ? 'var(--success)' : accuracy >= 50 ? 'var(--warning)' : 'var(--error)' }}>
+                          {accuracy}%
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={styles.listRight}>
+                  {mastery === 2 && <span className={styles.masteryDot} style={{ background: 'var(--success)' }}>✓</span>}
+                  {mastery === 1 && <span className={styles.masteryDot} style={{ background: 'var(--warning)' }}>●</span>}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={14} height={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }}>
+                    <path d="m9 18 6-6-6-6"/>
+                  </svg>
+                </div>
+              </button>
+            )
+          })}
+          {filtered.length === 0 && <div className={styles.empty}><span>Aucune technique trouvée</span></div>}
+        </div>
+      )}
     </div>
   )
 }
