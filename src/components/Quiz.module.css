@@ -374,3 +374,98 @@
 .secondaryBtn:hover {
   background: var(--bg-hover);
 }
+
+@media (max-width: 640px) {
+  .header {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .modeLabel {
+    font-size: 12px;
+  }
+
+  .progress span {
+    display: none;
+  }
+
+  .questionArea {
+    padding: 14px;
+  }
+
+  .mainImageContainer {
+    width: 160px;
+    height: 160px;
+  }
+
+  .nameKanji {
+    font-size: 40px;
+  }
+
+  .nameRomaji {
+    font-size: 20px;
+  }
+
+  .nameTraduction {
+    font-size: 12px;
+  }
+
+  .choiceRomaji {
+    font-size: 13px;
+  }
+
+  .choiceKanji {
+    font-size: 16px;
+  }
+
+  .textChoice {
+    padding: 12px;
+  }
+
+  .feedback {
+    padding: 10px 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .feedbackBanner {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .nextBtn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .resultScreen {
+    padding: 24px 20px;
+    gap: 12px;
+  }
+
+  .resultIcon {
+    font-size: 48px;
+  }
+
+  .resultTitle {
+    font-size: 22px;
+  }
+
+  .resultScore {
+    font-size: 44px;
+  }
+
+  .resultActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+}

@@ -55,7 +55,7 @@ export default function Sidebar({ currentView, onNavigate, streak, stats }) {
             title={item.label}
           >
             <span className={styles.icon}>{ICONS[item.id]}</span>
-            {expanded && <span className={styles.label}>{item.label}</span>}
+            <span className={`${styles.label} ${!expanded ? styles.labelHidden : ''}`}>{item.label}</span>
           </button>
         ))}
       </div>

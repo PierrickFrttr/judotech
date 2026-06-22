@@ -265,3 +265,64 @@
   height: 200px;
   color: var(--text-muted);
 }
+
+@media (max-width: 640px) {
+  .header {
+    padding: 16px 16px 0;
+    gap: 10px;
+  }
+
+  .headerTop {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .headerActions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .quizBtn {
+    justify-content: center;
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+
+  .searchBar {
+    padding: 10px 12px;
+  }
+
+  .filters {
+    padding-bottom: 12px;
+    gap: 6px;
+  }
+
+  .filterBtn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 12px 16px 16px;
+  }
+
+  .cardContent {
+    padding: 8px;
+  }
+
+  .romaji {
+    font-size: 11px;
+  }
+
+  .kanji {
+    font-size: 14px;
+  }
+
+  .traduction {
+    font-size: 10px;
+  }
+}

@@ -95,6 +95,10 @@
   font-weight: 500;
 }
 
+.labelHidden {
+  display: none;
+}
+
 .bottom {
   display: flex;
   flex-direction: column;
@@ -153,4 +157,59 @@
 .miniStatLabel {
   font-size: 11px;
   color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 4px;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    gap: 0;
+    z-index: 100;
+  }
+
+  .sidebar.expanded {
+    width: 100% !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 0;
+    flex: 1;
+    height: 100%;
+  }
+
+  .navItem {
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 4px;
+    gap: 3px;
+    border-radius: var(--radius-sm);
+    height: 100%;
+  }
+
+  .label,
+  .labelHidden {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .bottom {
+    display: none;
+  }
 }
