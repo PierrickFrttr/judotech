@@ -267,6 +267,99 @@
   line-height: 1.6;
 }
 
+/* ── Techniques similaires ── */
+.similarSection {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  margin-top: 4px;
+}
+
+.similarTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.similarSubtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.similarList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.similarItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  transition: background var(--transition);
+  width: 100%;
+}
+
+.similarItem:last-child {
+  border-bottom: none;
+}
+
+.similarItem:hover {
+  background: var(--bg-hover);
+}
+
+.similarImage {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.similarImage > * {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
+.similarInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.similarRomaji {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.similarKanji {
+  font-family: serif;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.similarTraduction {
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media (max-width: 640px) {
   .topBar {
     padding: 12px 16px;

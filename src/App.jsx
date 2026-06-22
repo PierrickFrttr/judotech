@@ -63,6 +63,8 @@ export default function App() {
             progress={progress[selectedTechnique.id]}
             onBack={() => setView('encyclopedia')}
             onStartQuiz={handleStartQuiz}
+            allTechniques={techniques}
+            onSelect={handleSelectTechnique}
           />
         )}
         {view === 'quiz' && (

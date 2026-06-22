@@ -739,5 +739,328 @@
     },
     "niveau_difficulte": 3,
     "tags": ["gokyo", "shime-waza"]
+  },
+  {
+    "id": "o-uchi-gari",
+    "nom_japonais": "O-uchi-gari",
+    "romaji": "O-uchi-gari",
+    "traduction_fr": "Grand fauchage intérieur",
+    "kanji": "大内刈",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Pousser Uke vers l'arrière en tirant sur le revers, déséquilibrer vers son coin arrière intérieur droit.",
+      "tsukuri": "Avancer le pied gauche à côté du pied droit d'Uke, coller le corps contre lui, jambe droite prête à faucher.",
+      "kake": "Faucher la jambe droite d'Uke de l'intérieur vers l'extérieur et vers le haut avec la jambe droite, accompagner avec les bras vers l'arrière.",
+      "erreurs": "Faucher trop bas au niveau de la cheville — cibler le mollet ou le creux du genou. Ne pas se coller assez à Uke avant le fauchage."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "ko-uchi-gari",
+    "nom_japonais": "Ko-uchi-gari",
+    "romaji": "Ko-uchi-gari",
+    "traduction_fr": "Petit fauchage intérieur",
+    "kanji": "小内刈",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 2,
+    "images": [],
+    "tips": {
+      "kuzushi": "Pousser Uke vers son coin arrière, déséquilibrer légèrement sur le talon d'une jambe.",
+      "tsukuri": "Avancer le pied vers le côté intérieur du pied d'Uke (pied à pied), rester près du corps.",
+      "kake": "Faucher le pied ou la cheville d'Uke de l'intérieur vers l'extérieur, simultanément pousser avec les bras pour compléter la chute.",
+      "erreurs": "Faucher trop tôt — attendre que le poids d'Uke soit bien sur la jambe cible. Négliger l'action des bras qui accompagne le fauchage."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "de-ashi-barai",
+    "nom_japonais": "De-ashi-barai",
+    "romaji": "De-ashi-barai",
+    "traduction_fr": "Balayage du pied avançant",
+    "kanji": "出足払",
+    "famille": "nage-waza",
+    "sous_famille": "ashi-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant-diagonal pour qu'il avance un pied — attendre et suivre son déplacement naturel.",
+      "tsukuri": "Se déplacer latéralement en synchronisation avec Uke, pied balayeur tangent au sol, cheville contre cheville.",
+      "kake": "Balayer le pied avançant d'Uke latéralement au moment exact où il pose le poids dessus, les bras tirent en diagonal pour compléter.",
+      "erreurs": "Balayer trop tôt (pied encore en l'air) ou trop tard (poids déjà posé). Le timing est primordial — c'est une technique de contre."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["gokyo", "timing"]
+  },
+  {
+    "id": "o-goshi",
+    "nom_japonais": "O-goshi",
+    "romaji": "O-goshi",
+    "traduction_fr": "Grande hanche",
+    "kanji": "大腰",
+    "famille": "nage-waza",
+    "sous_famille": "koshi-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Tirer Uke vers l'avant avec le bras droit, le bras gauche passant autour de sa taille pour le coller contre soi.",
+      "tsukuri": "Pivoter sur le pied gauche puis le droit, hanches rentrées sous le centre de gravité d'Uke, dos collé à son ventre, genoux fléchis.",
+      "kake": "Redresser les jambes, projeter Uke par-dessus la hanche droite en le soulevant et en tournant, le guider avec les deux bras.",
+      "erreurs": "Ne pas rentrer suffisamment les hanches sous Uke — les hanches doivent être plus basses que son centre de gravité. Projeter avec les bras sans les jambes."
+    },
+    "niveau_difficulte": 1,
+    "tags": ["gokyo"]
+  },
+  {
+    "id": "ushiro-kesa-gatame",
+    "nom_japonais": "Ushiro-kesa-gatame",
+    "romaji": "Ushiro-kesa-gatame",
+    "traduction_fr": "Immobilisation en écharpe arrière",
+    "kanji": "後袈裟固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": null,
+    "images": [],
+    "tips": {
+      "kuzushi": "S'asseoir sur le côté d'Uke en lui tournant le dos, maintenir sa tête bloquée sous le bras.",
+      "tsukuri": "Assis à côté d'Uke dos tourné vers sa tête, bras gauche passant sous sa nuque et saisissant sa ceinture, bras droit coinçant son bras droit entre cuisse et buste.",
+      "kake": "Poids du corps latéralement sur le torse d'Uke, jambes écartées pour la stabilité, coincer fermement son bras droit.",
+      "erreurs": "Laisser la tête d'Uke libre — son bras doit être bloqué sous le bras droit. S'asseoir trop loin en avant."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["variante_kesa"]
+  },
+  {
+    "id": "kuzure-kami-shiho-gatame",
+    "nom_japonais": "Kuzure-kami-shiho-gatame",
+    "romaji": "Kuzure-kami-shiho-gatame",
+    "traduction_fr": "Variante immobilisation des quatre coins du haut",
+    "kanji": "崩上四方固",
+    "famille": "katame-waza",
+    "sous_famille": "osaekomi-waza",
+    "gokyo_groupe": null,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôle identique au Kami-shiho-gatame mais avec une variation de saisie.",
+      "tsukuri": "Derrière la tête d'Uke, un bras passe sous l'aisselle pour saisir le revers (au lieu de la ceinture), l'autre bras sous l'aisselle opposée.",
+      "kake": "Ventre sur la tête d'Uke, genoux de chaque côté, poids centré, tirer les bras vers le bas.",
+      "erreurs": "Confondre avec Kami-shiho-gatame — ici une ou les deux saisies visent le revers ou le bras plutôt que la ceinture."
+    },
+    "niveau_difficulte": 2,
+    "tags": ["variante_kami-shiho"]
+  },
+  {
+    "id": "nami-juji-jime",
+    "nom_japonais": "Nami-juji-jime",
+    "romaji": "Nami-juji-jime",
+    "traduction_fr": "Étranglement en croix normale",
+    "kanji": "並十字絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 4,
+    "images": [],
+    "tips": {
+      "kuzushi": "Être en position montée sur Uke (tate-shiho), contrôler son buste.",
+      "tsukuri": "Les deux pouces glissent à l'intérieur des revers d'Uke, mains croisées en X, poignets contre les carotides.",
+      "kake": "Croiser les avant-bras vers le bas en écartant les coudes, les revers compriment les carotides des deux côtés simultanément.",
+      "erreurs": "Placer les poignets sur la gorge (trachée) plutôt que sur les carotides — viser les côtés du cou. Ne pas assez croiser les bras."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "shime-waza", "position_montee"]
+  },
+  {
+    "id": "gyaku-juji-jime",
+    "nom_japonais": "Gyaku-juji-jime",
+    "romaji": "Gyaku-juji-jime",
+    "traduction_fr": "Étranglement en croix inversée",
+    "kanji": "逆十字絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 4,
+    "images": [],
+    "tips": {
+      "kuzushi": "Être en position montée sur Uke, contrôler son buste.",
+      "tsukuri": "Les pouces passent à l'extérieur des revers d'Uke (doigts à l'intérieur), bras croisés inversement par rapport à Nami-juji-jime.",
+      "kake": "Croiser les avant-bras vers le bas, les revers compriment les carotides. La pression est légèrement différente de Nami-juji-jime.",
+      "erreurs": "Confondre avec Nami-juji-jime — observer si les pouces sont dedans (nami) ou dehors (gyaku). Même erreur de placement sur la gorge à éviter."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "shime-waza", "position_montee"]
+  },
+  {
+    "id": "kata-juji-jime",
+    "nom_japonais": "Kata-juji-jime",
+    "romaji": "Kata-juji-jime",
+    "traduction_fr": "Étranglement en demi-croix",
+    "kanji": "片十字絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 4,
+    "images": [],
+    "tips": {
+      "kuzushi": "Être en position montée sur Uke.",
+      "tsukuri": "Une main avec le pouce à l'intérieur du revers, l'autre avec les doigts à l'intérieur de l'autre revers — asymétrique.",
+      "kake": "Croiser les avant-bras, combiner la pression des deux côtés du cou. Variante des Juji-jime.",
+      "erreurs": "Utiliser la même saisie pour les deux mains — l'une doit être pouce dedans, l'autre doigts dedans."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "shime-waza", "position_montee"]
+  },
+  {
+    "id": "hadaka-jime",
+    "nom_japonais": "Hadaka-jime",
+    "romaji": "Hadaka-jime",
+    "traduction_fr": "Étranglement nu",
+    "kanji": "裸絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Par-derrière Uke, coller son dos contre sa poitrine, le contrôler pour l'empêcher de s'échapper.",
+      "tsukuri": "Passer l'avant-bras droit devant la gorge d'Uke (avant-bras contre le larynx), main droite saisit le creux du coude gauche, main gauche pousse la nuque d'Uke vers l'avant.",
+      "kake": "Comprimer les deux côtés du cou avec l'avant-bras et le biceps/avant-bras gauche, pousser la tête vers l'avant avec la main gauche.",
+      "erreurs": "Appuyer sur la trachée avec l'avant-bras — viser les carotides avec les côtés de l'avant-bras. Laisser Uke rentrer le menton."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "shime-waza", "par_derriere"]
+  },
+  {
+    "id": "kataha-jime",
+    "nom_japonais": "Kataha-jime",
+    "romaji": "Kataha-jime",
+    "traduction_fr": "Étranglement d'une aile",
+    "kanji": "片羽絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Par-derrière Uke, contrôler un bras en le levant au-dessus de sa tête (en aile), coller à son dos.",
+      "tsukuri": "Avant-bras droit devant la gorge comme Hadaka-jime, mais la main gauche saisit le poignet ou le bras droit d'Uke et le lève derrière sa nuque.",
+      "kake": "Tirer le bras d'Uke vers l'arrière-haut avec la main gauche, simultanément comprimer les carotides avec l'avant-bras droit.",
+      "erreurs": "Ne pas lever assez le bras d'Uke — il doit être plaqué derrière la nuque pour bloquer sa défense. Relâcher la pression de l'avant-bras."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["gokyo", "shime-waza", "par_derriere"]
+  },
+  {
+    "id": "sode-guruma-jime",
+    "nom_japonais": "Sode-guruma-jime",
+    "romaji": "Sode-guruma-jime",
+    "traduction_fr": "Étranglement avec la manche",
+    "kanji": "袖車絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Par-derrière Uke, saisir les manches ou revers pour contrôler ses bras.",
+      "tsukuri": "Glisser les deux avant-bras de chaque côté du cou d'Uke, saisir les tissus (manches, revers) pour bloquer le mouvement.",
+      "kake": "Tirer les deux avant-bras vers l'arrière comme un volant, les avant-bras compriment les deux carotides simultanément.",
+      "erreurs": "Comprimer la trachée au lieu des carotides. Tirer vers le bas au lieu de vers l'arrière."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["shime-waza", "par_derriere"]
+  },
+  {
+    "id": "ude-garami",
+    "nom_japonais": "Ude-garami",
+    "romaji": "Ude-garami",
+    "traduction_fr": "Clef de bras en S",
+    "kanji": "腕緘",
+    "famille": "katame-waza",
+    "sous_famille": "kansetsu-waza",
+    "gokyo_groupe": 1,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler le bras d'Uke plaqué au sol, coude à 90° plié.",
+      "tsukuri": "Saisir le poignet d'Uke avec une main, glisser l'autre main sous son coude pour saisir son propre poignet — former une figure en S.",
+      "kake": "Faire tourner le poignet d'Uke vers le haut (rotation externe) en appuyant sur le coude, créant une pression sur l'articulation de l'épaule.",
+      "erreurs": "Plier le coude d'Uke dans le mauvais sens. Appuyer sur le coude avant d'avoir une bonne saisie en S."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["gokyo", "kansetsu-waza"]
+  },
+  {
+    "id": "ude-gatame",
+    "nom_japonais": "Ude-gatame",
+    "romaji": "Ude-gatame",
+    "traduction_fr": "Clef de bras — pression sur le coude",
+    "kanji": "腕固",
+    "famille": "katame-waza",
+    "sous_famille": "kansetsu-waza",
+    "gokyo_groupe": 2,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler le bras d'Uke en extension complète.",
+      "tsukuri": "Saisir le poignet d'Uke à deux mains ou bloquer avec une main, coude contre le coude d'Uke tendu.",
+      "kake": "Appuyer sur le coude tendu d'Uke dans le sens contraire à sa flexion naturelle, la force est sur l'articulation du coude.",
+      "erreurs": "Uke peut se défendre en fléchissant le bras — tenir le bras en extension complète. Ne pas appuyer dans l'axe du bras."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["kansetsu-waza"]
+  },
+  {
+    "id": "hiza-gatame",
+    "nom_japonais": "Hiza-gatame",
+    "romaji": "Hiza-gatame",
+    "traduction_fr": "Clef par le genou",
+    "kanji": "膝固",
+    "famille": "katame-waza",
+    "sous_famille": "kansetsu-waza",
+    "gokyo_groupe": 3,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler le bras d'Uke, le tirer en extension en utilisant le genou comme point d'appui.",
+      "tsukuri": "Placer le genou sur le coude d'Uke pour le bloquer, tirer le poignet avec les deux mains vers soi.",
+      "kake": "Tirer le poignet d'Uke vers soi pendant que le genou fait levier sur le coude — hyperextension du coude.",
+      "erreurs": "Placer le genou sur l'avant-bras ou la main plutôt que sur le coude. Ne pas assez tirer le poignet pour activer le levier."
+    },
+    "niveau_difficulte": 3,
+    "tags": ["kansetsu-waza"]
+  },
+  {
+    "id": "waki-gatame",
+    "nom_japonais": "Waki-gatame",
+    "romaji": "Waki-gatame",
+    "traduction_fr": "Clef sous l'aisselle",
+    "kanji": "腋固",
+    "famille": "katame-waza",
+    "sous_famille": "kansetsu-waza",
+    "gokyo_groupe": 4,
+    "images": [],
+    "tips": {
+      "kuzushi": "Saisir le bras d'Uke en extension, le coincer sous l'aisselle.",
+      "tsukuri": "Bloquer le poignet d'Uke contre sa hanche, coincer son coude sous son aisselle (comme serrer sous le bras), bras d'Uke tendu.",
+      "kake": "Exercer une pression vers le bas sur le coude d'Uke avec le corps entier, hyperextension du coude ou de l'épaule.",
+      "erreurs": "Laisser le bras d'Uke se fléchir — maintenir l'extension. Coincer l'avant-bras plutôt que le coude sous l'aisselle."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["kansetsu-waza"]
+  },
+  {
+    "id": "sankaku-jime",
+    "nom_japonais": "Sankaku-jime",
+    "romaji": "Sankaku-jime",
+    "traduction_fr": "Étranglement en triangle",
+    "kanji": "三角絞",
+    "famille": "katame-waza",
+    "sous_famille": "shime-waza",
+    "gokyo_groupe": 5,
+    "images": [],
+    "tips": {
+      "kuzushi": "Contrôler la tête et un bras d'Uke, l'attirer vers soi pour placer les jambes.",
+      "tsukuri": "Placer la cuisse droite sur la nuque d'Uke, passer le pied gauche derrière le genou droit, verrouiller le triangle — la tête d'Uke et un bras sont à l'intérieur.",
+      "kake": "Serrer les cuisses, appuyer la tête d'Uke vers le bas avec les jambes, tirer son bras de l'autre côté pour accentuer la pression sur les carotides.",
+      "erreurs": "Laisser les deux bras d'Uke à l'intérieur (un seul doit être dedans). Ne pas verrouiller les jambes en triangle — glissement possible."
+    },
+    "niveau_difficulte": 4,
+    "tags": ["shime-waza", "technique_avancee"]
   }
 ]

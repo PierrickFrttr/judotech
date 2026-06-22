@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -375,6 +376,173 @@
   background: var(--bg-hover);
 }
 
+/* Feedback actions (wrong answer) */
+.feedbackActions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ficheBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all var(--transition);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ficheBtn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-focus);
+}
+
+/* Fiche modal overlay */
+.ficheOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 16px;
+  backdrop-filter: blur(4px);
+}
+
+.ficheModal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 560px;
+  max-height: 85vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+}
+
+.ficheHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.ficheRomaji {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.ficheKanji {
+  font-family: serif;
+  font-size: 24px;
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.ficheTraduction {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.ficheClose {
+  color: var(--text-muted);
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.ficheClose:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.ficheBody {
+  display: flex;
+  gap: 20px;
+  padding: 20px 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.ficheImage {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.ficheImage > * {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
+.ficheTips {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ficheTipCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.ficheTipLabel {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.ficheTipText {
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.ficheContinueBtn {
+  margin: 0 24px 20px;
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+
+.ficheContinueBtn:hover {
+  background: var(--accent-hover);
+}
+
 @media (max-width: 640px) {
   .header {
     padding: 10px 14px;
@@ -433,11 +601,44 @@
     font-size: 13px;
   }
 
-  .nextBtn {
+  .feedbackActions {
     width: 100%;
+    gap: 8px;
+  }
+
+  .ficheBtn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .nextBtn {
+    flex: 1;
     text-align: center;
     justify-content: center;
-    padding: 12px;
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .ficheBody {
+    flex-direction: column;
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .ficheImage {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+  }
+
+  .ficheContinueBtn {
+    margin: 0 14px 14px;
+  }
+
+  .ficheHeader {
+    padding: 14px 14px 12px;
   }
 
   .resultScreen {

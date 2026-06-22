@@ -1,6 +1,13 @@
-import React, { useState, useCallback, useMemo, useEffect } from 'react'
+import React, { useState } from 'react'
 import TechniqueImage from './TechniqueImage'
 import styles from './Quiz.module.css'
+
+const TIPS_LABELS = {
+  kuzushi: { label: 'Kuzushi', color: '#a855f7' },
+  tsukuri: { label: 'Tsukuri', color: '#3b82f6' },
+  kake: { label: 'Kake', color: '#c8002a' },
+  erreurs: { label: 'Erreurs', color: '#f59e0b' },
+}
 
 function shuffle(arr) {
   const a = [...arr]
@@ -25,6 +32,9 @@ export default function Quiz({ techniques, progress, mode, updateProgress, onBac
   const [score, setScore] = useState({ correct: 0, total: 0 })
   const [sessionDone, setSessionDone] = useState(false)
   const [sessionSize] = useState(10)
+  const [showFiche, setShowFiche] = useState(false)
+
+  const isWrong = answered && selected !== question.correct.id
 
   const modeLabel = mode === 'A' ? 'Image → Nom' : 'Nom → Image'
 
@@ -45,10 +55,6 @@ export default function Quiz({ techniques, progress, mode, updateProgress, onBac
   }
 
   function handleNext() {
-    if (score.total + 1 > sessionSize && !answered) {
-      setSessionDone(true)
-      return
-    }
     if (score.total >= sessionSize) {
       setSessionDone(true)
       return
@@ -56,6 +62,7 @@ export default function Quiz({ techniques, progress, mode, updateProgress, onBac
     setQuestion(buildQuestion(techniques, mode))
     setSelected(null)
     setAnswered(false)
+    setShowFiche(false)
   }
 
   function handleRestart() {
@@ -64,6 +71,7 @@ export default function Quiz({ techniques, progress, mode, updateProgress, onBac
     setSelected(null)
     setAnswered(false)
     setSessionDone(false)
+    setShowFiche(false)
   }
 
   if (sessionDone) {
@@ -148,13 +156,58 @@ export default function Quiz({ techniques, progress, mode, updateProgress, onBac
               </>
             )}
           </div>
-          <button
-            className={styles.nextBtn}
-            onClick={handleNext}
-            autoFocus
-          >
-            {score.total >= sessionSize - 1 ? 'Voir les résultats' : 'Question suivante →'}
-          </button>
+          {isWrong ? (
+            <div className={styles.feedbackActions}>
+              <button className={styles.ficheBtn} onClick={() => setShowFiche(true)}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={14} height={14}>
+                  <circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/>
+                </svg>
+                Voir la fiche
+              </button>
+              <button className={styles.nextBtn} onClick={handleNext} autoFocus>
+                {score.total >= sessionSize ? 'Voir les résultats' : 'Continuer →'}
+              </button>
+            </div>
+          ) : (
+            <button className={styles.nextBtn} onClick={handleNext} autoFocus>
+              {score.total >= sessionSize ? 'Voir les résultats' : 'Question suivante →'}
+            </button>
+          )}
+        </div>
+      )}
+
+      {showFiche && (
+        <div className={styles.ficheOverlay} onClick={() => setShowFiche(false)}>
+          <div className={styles.ficheModal} onClick={e => e.stopPropagation()}>
+            <div className={styles.ficheHeader}>
+              <div>
+                <h2 className={styles.ficheRomaji}>{correct.romaji}</h2>
+                <span className={styles.ficheKanji}>{correct.kanji}</span>
+                <p className={styles.ficheTraduction}>{correct.traduction_fr}</p>
+              </div>
+              <button className={styles.ficheClose} onClick={() => setShowFiche(false)}>✕</button>
+            </div>
+            <div className={styles.ficheBody}>
+              <div className={styles.ficheImage}>
+                <TechniqueImage technique={correct} size="large" />
+              </div>
+              <div className={styles.ficheTips}>
+                {Object.entries(TIPS_LABELS).map(([key, meta]) => {
+                  const tip = correct.tips?.[key]
+                  if (!tip) return null
+                  return (
+                    <div key={key} className={styles.ficheTipCard} style={{ borderLeftColor: meta.color }}>
+                      <span className={styles.ficheTipLabel} style={{ color: meta.color }}>{meta.label}</span>
+                      <p className={styles.ficheTipText}>{tip}</p>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+            <button className={styles.ficheContinueBtn} onClick={() => { setShowFiche(false); handleNext() }}>
+              {score.total >= sessionSize ? 'Voir les résultats' : 'Continuer le quiz →'}
+            </button>
+          </div>
         </div>
       )}
     </div>

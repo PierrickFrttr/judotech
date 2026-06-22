@@ -11,7 +11,7 @@ const TIPS_LABELS = {
 
 const DIFFICULTY_LABELS = ['', 'Débutant', 'Intermédiaire', 'Avancé', 'Expert']
 
-export default function TechniqueDetail({ technique, progress, onBack, onStartQuiz }) {
+export default function TechniqueDetail({ technique, progress, onBack, onStartQuiz, allTechniques, onSelect }) {
   const [activeImage, setActiveImage] = useState(0)
 
   const attempts = progress ? (progress.correct || 0) + (progress.wrong || 0) : 0
@@ -134,7 +134,47 @@ export default function TechniqueDetail({ technique, progress, onBack, onStartQu
               })}
             </div>
           </div>
+
+          {allTechniques && onSelect && (
+            <SimilarTechniques
+              current={technique}
+              allTechniques={allTechniques}
+              onSelect={onSelect}
+            />
+          )}
         </div>
+      </div>
+    </div>
+  )
+}
+
+function SimilarTechniques({ current, allTechniques, onSelect }) {
+  const similar = allTechniques
+    .filter(t => t.id !== current.id && t.sous_famille === current.sous_famille)
+    .slice(0, 4)
+
+  if (similar.length === 0) return null
+
+  return (
+    <div className={styles.similarSection}>
+      <h2 className={styles.similarTitle}>Techniques similaires</h2>
+      <p className={styles.similarSubtitle}>{current.sous_famille}</p>
+      <div className={styles.similarList}>
+        {similar.map(t => (
+          <button key={t.id} className={styles.similarItem} onClick={() => onSelect(t.id)}>
+            <div className={styles.similarImage}>
+              <TechniqueImage technique={t} size="small" />
+            </div>
+            <div className={styles.similarInfo}>
+              <span className={styles.similarRomaji}>{t.romaji}</span>
+              <span className={styles.similarKanji}>{t.kanji}</span>
+              <span className={styles.similarTraduction}>{t.traduction_fr}</span>
+            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} width={14} height={14} style={{ color: 'var(--text-muted)', flexShrink: 0 }}>
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+          </button>
+        ))}
       </div>
     </div>
   )
